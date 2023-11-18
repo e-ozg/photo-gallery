@@ -4,79 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <style>
+        .card {
+            margin: 4%;
+            height: 270px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card img {
+        width: 100%; /* Take up 100% of the width of the parent container */
+        height: 100%; /* Take up 100% of the height of the parent container */
+        object-fit: cover; /* Maintain aspect ratio while covering the container */
+    }
+    </style>
 
 </head>
 <body>
     <header>
-        <h1 style="background-color: aquamarine; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">MY ALL TIME FAVORITE MOVIES</h1>
+        <h1 style="background-color: rgb(37, 39, 38); text-align: center; color: rgb(232, 250, 244);">ALL TIME FAVORITE MOVIES</h1>
     </header>
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-4">
-            <img class="img-responsive" src="thething.jpg" alt="">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="thething.jpg" alt="" data-bs-toggle="modal" data-bs-target="#pic-detail">
+                </div>
             </div>
             <div class="col-sm-4">
-            <img class="img-responsive" src="aliens.jpg" alt="">
+                <div class="card">
+                    <img class="card-img-top img-fluid" src="aliens.jpg" alt="" data-bs-toggle="modal" data-bs-target="#pic-detail">
+                </div>
             </div>
             <div class="col-sm-4">
-            <img class="img-responsive" src="melancholia.jpg" alt="">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-            <img class="img-responsive" src="buffalo66.jpg" alt="">
-            </div>
-            <div class="col-sm-4">
-            <img class="img-responsive" src="blade-runner.jpg" alt="">
-            </div>
-            <div class="col-sm-4">
-            <img class="img-responsive" src="pi.jpg" alt="">
+                <div class="card">
+                    <img class="card-img-top img-fluid"  src="melancholia.jpg" alt="" data-bs-toggle="modal" data-bs-target="#pic-detail">
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-4">
-            <img class="img-responsive" src="madmaxbeyond.jpg" alt="">
+                <div class="card"><img class="card-img-top img-fluid" src="buffalo66.jpg" alt="" data-bs-toggle="modal" data-bs-target="#pic-detail"></div>
             </div>
             <div class="col-sm-4">
-            <img class="img-responsive" src="alien.jpg" alt="">
+                <div class="card"><img class="card-img-top img-fluid" src="blade-runner.jpg" alt="" data-bs-toggle="modal" data-bs-target="#pic-detail"></div>
             </div>
             <div class="col-sm-4">
-            <img class="img-responsive" src="asphaltjungle.jpg" alt="">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-            <img class="img-responsive" src="stalker.jpg" alt="">
-            </div>
-            <div class="col-sm-4">
-            <img class="img-responsive" src="shaunofthedead.jpg" alt="">
-            </div>
-            <div class="col-sm-4">
-            <img class="img-responsive" src="coolhandluke.jpg" alt="">
+                <div class="card"><img class="card-img-top img-fluid" src="pi.jpg" alt="" data-bs-toggle="modal" data-bs-target="#pic-detail"></div>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-4">
-            <img class="img-responsive" src="dasboot.jpg" alt="">
+                <div class="card"><img class="card-img-top img-fluid" src="madmaxbeyond.jpg" alt="" data-bs-toggle="modal" data-bs-target="#pic-detail"></div>
             </div>
             <div class="col-sm-4">
-            <img class="img-responsive" src="gothic.jpg" alt="">
+                <div class="card"><img class="card-img-top img-fluid" src="alien.jpg" alt="" data-bs-toggle="modal" data-bs-target="#pic-detail"></div>
             </div>
             <div class="col-sm-4">
-            <img class="img-responsive" src="theylive.jpg" alt="">
+                <div class="card"><img class="card-img-top img-fluid" src="asphaltjungle.jpg" alt="" data-bs-toggle="modal" data-bs-target="#pic-detail"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card"><img class="card-img-top img-fluid" src="stalker.jpg" alt="" data-bs-toggle="modal" data-bs-target="#pic-detail"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card"><img class="card-img-top img-fluid" src="shaunofthedead.jpg" alt="" data-bs-toggle="modal" data-bs-target="#pic-detail"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card"><img class="card-img-top img-fluid" src="coolhandluke.jpg" alt="" data-bs-toggle="modal" data-bs-target="#pic-detail"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card"><img class="card-img-top img-fluid" src="dasboot.jpg" alt="" data-bs-toggle="modal" data-bs-target="#pic-detail"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card"><img class="card-img-top img-fluid" src="gothic.jpg" alt="" data-bs-toggle="modal" data-bs-target="#pic-detail"></div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card"><img class="card-img-top img-fluid" src="theylive.jpg" alt="" data-bs-toggle="modal" data-bs-target="#pic-detail"></div>
             </div>
         </div>
 
         
     </div>
+<!-- Modal -->
+<div class="modal fade" id="pic-detail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+            <img id="modal-image" src="" class="card-img-top" alt="Manzara">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<script>
+    document.querySelectorAll(".card img").forEach(el => {
+        el.addEventListener('click', () => {
+            let src = el.getAttribute("src");
+  
+            let modalImage = document.getElementById("modal-image");
+            modalImage.setAttribute("src", src);
+        });
+    });
+</script>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>
